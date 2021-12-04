@@ -113,7 +113,7 @@ public class ClienteDao {
             throw new RuntimeException (e);
         }
         
-        // retorna true se atualizou 1 aluno
+        // retorna true se atualizou 1 cliente
         return clientesAtualizados == 1;
     }
     
@@ -130,7 +130,7 @@ public class ClienteDao {
         } catch (SQLException e){
             throw new RuntimeException(e);
         }
-        // retorna true se removeu 1 aluno
+        // retorna true se removeu 1 cliente
         return clientesRemovidos == 1;
     }
 }
