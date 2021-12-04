@@ -5,7 +5,7 @@ public class ConnectionFactory {
     
     public Connection getConnection(){
         try{
-                Connection conexao = DriverManager.getConnection("jdbc:derby://localhost:1527/sistema_academico","app","app");
+                Connection conexao = DriverManager.getConnection("jdbc:derby://localhost:1527/sistema","app","123");
                 return conexao;
                
             } catch(SQLException ex){

@@ -12,15 +12,31 @@ import javax.ws.rs.PathParam;
 import com.google.gson.Gson;
 import javax.ws.rs.POST;
 import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.UriInfo;
 
 
-@Path("cliente")
+@Path("")
 public class ClienteWS {
+    
+    
+    @Context
+    private UriInfo context;
+    
+    public ClienteWS() {
+    }
+    
+    
+    @GET
+    @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
+    public String getJson(){
+        throw new UnsupportedOperationException();
+    }
 
     @GET
     @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-    @Path("")
+    @Path("cliente")
     public String getCliente(){
         ClienteDao dao = new ClienteDao();
         List <Cliente> listaClientes = dao.getLista();
@@ -30,7 +46,7 @@ public class ClienteWS {
     
     @GET
     @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-    @Path("{codigo}")
+    @Path("cliente/{codigo}")
     public String getCliente(@PathParam("codigo") int codigo){
         ClienteDao dao = new ClienteDao();
         Cliente cliente = dao.consulta(codigo);
@@ -44,7 +60,7 @@ public class ClienteWS {
     
     @POST
     @Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-    @Path("")
+    @Path("cliente")
     public Response addCliente (String content){
         Gson gson = new Gson();
         Cliente cliente = (Cliente) gson.fromJson (content, Cliente.class);
@@ -63,7 +79,7 @@ public class ClienteWS {
     
     @PUT
     @Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-    @Path("")
+    @Path("cliente")
     public Response setCliente(String content){
         Gson gson = new Gson();
         Cliente cliente = (Cliente) gson.fromJson (content, Cliente.class);
@@ -84,7 +100,7 @@ public class ClienteWS {
     
     @DELETE
     @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-    @Path("{codigo}")
+    @Path("cliente/{codigo}")
     public Response delCliente(@PathParam("codigo") int codigo){
         ClienteDao dao = new ClienteDao();
         
@@ -94,5 +110,12 @@ public class ClienteWS {
         } else
             return Response.status(Response.Status.NOT_FOUND).build();
     }
+    
+    
+    @PUT
+    @Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
+    public void putJson(String content) {
+    }
+    
 }
         

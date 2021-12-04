@@ -3,7 +3,7 @@ package WS;
 import java.util.Set;
 
 
-@javax.ws.rs.ApplicationPath("")
+@javax.ws.rs.ApplicationPath("pessoal")
 public class ApplicationConfig extends javax.ws.rs.core.Application {
 
     @Override
