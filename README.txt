@@ -13,10 +13,10 @@ CREATE TABLE cliente(
 
 
 
- Trata-se de uma aplicação CRUD (Create, Read, Update, Delete) que conta com a implementação do Web Service RESTful.
- Nesse sentido, o Web Service disponibiliza os recursos de inserir, remover e editar clientes, além de listar clientes ou apresentá-los por código.
- Os métodos que tratam as requisições devolvem as respostas no formato JSON e, além disso,
- as operações implementadas no Web Service atendem seguintes scripts implementados utilizando a API Fetch:
+Trata-se de uma aplicação CRUD (Create, Read, Update, Delete) que conta com a implementação do Web Service RESTful.
+Nesse sentido, o Web Service disponibiliza os recursos de inserir, remover e editar clientes, além de listar clientes ou apresentá-los por código.
+Os métodos que tratam as requisições devolvem as respostas no formato JSON e, além disso,
+as operações implementadas no Web Service atendem seguintes scripts implementados utilizando a API Fetch:
 
 
 Método @GET: recupera os dados de um determinado cliente a partir de seu código (codigo): 
