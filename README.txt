@@ -17,9 +17,13 @@ Trata-se de uma aplicação CRUD (Create, Read, Update, Delete) que conta com a 
 
 Nesse sentido, o Web Service disponibiliza os recursos de inserir, remover e editar clientes, além de listar clientes ou apresentá-los por código.
 
-É possível listar os clientes em http://localhost:8080/sistemaEmpresa/pessoal/cliente ou recuperá-los por código em http://localhost:8080/sistemaEmpresa/pessoal/cliente/{codigo}
+É possível listar os clientes em http://localhost:8080/sistemaEmpresa/pessoal/cliente.
 
-Os métodos que tratam as requisições devolvem as respostas no formato JSON e, além disso, as operações implementadas no Web Service atendem seguintes scripts implementados utilizando a API Fetch:
+E, ainda, recuperá-los por código em http://localhost:8080/sistemaEmpresa/pessoal/cliente/{codigo}
+
+Os métodos que tratam as requisições devolvem as respostas no formato JSON.
+
+E, além disso, as operações implementadas no Web Service atendem seguintes scripts implementados utilizando a API Fetch:
 
 
 Método @GET: recupera os dados de um determinado cliente a partir de seu código (codigo): 
