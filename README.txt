@@ -17,7 +17,7 @@ Trata-se de uma aplicação CRUD (Create, Read, Update, Delete) que conta com a 
 
 Nesse sentido, o Web Service disponibiliza os recursos de inserir, remover e editar clientes, além de listar clientes ou apresentá-los por código.
 
-É possível listar os clientes em http://localhost:8080/sistemaEmpresa/pessoal/cliente
+É possível acessar a lista de clientes em http://localhost:8080/sistemaEmpresa/pessoal/cliente
 
 E, ainda, recuperá-los por código em http://localhost:8080/sistemaEmpresa/pessoal/cliente/{codigo}
 
