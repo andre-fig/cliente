@@ -23,7 +23,7 @@ E, ainda, recuperá-los por código em http://localhost:8080/sistemaEmpresa/pess
 
 Os métodos que tratam as requisições devolvem as respostas no formato JSON.
 
-E, além disso, as operações implementadas no Web Service atendem seguintes scripts implementados utilizando a API Fetch:
+Além disso, as operações implementadas no Web Service atendem seguintes scripts implementados utilizando a API Fetch:
 
 
 Método @GET: recupera os dados de um determinado cliente a partir de seu código (codigo): 
