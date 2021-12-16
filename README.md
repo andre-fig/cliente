@@ -1,4 +1,4 @@
-##### SQL responsável por criar a estrutura do banco:
+### SQL responsável por criar a estrutura do banco:
 
 ```
 CREATE TABLE cliente( 
@@ -14,10 +14,14 @@ CREATE TABLE cliente(
 ```
 
 
+### O que é?
 
 Trata-se de uma aplicação CRUD (Create, Read, Update, Delete) que conta com a implementação do Web Service RESTful.
 
 Nesse sentido, o Web Service disponibiliza os recursos de inserir, remover e editar clientes, além de listar clientes ou apresentá-los por código.
+
+
+### Quais são as funcionalidades? 
 
 É possível acessar a lista de clientes em http://localhost:8080/sistemaEmpresa/pessoal/cliente
 
@@ -26,7 +30,6 @@ E, ainda, recuperá-los por código em http://localhost:8080/sistemaEmpresa/pess
 Os métodos que tratam as requisições devolvem as respostas no formato JSON.
 
 Além disso, as operações implementadas no Web Service atendem seguintes scripts implementados utilizando a API Fetch:
-
 
 Método @GET: recupera os dados de um determinado cliente a partir de seu código (codigo): 
 
