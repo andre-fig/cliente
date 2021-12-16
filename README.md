@@ -18,10 +18,10 @@ CREATE TABLE cliente(
 
 Trata-se de uma aplicação CRUD (Create, Read, Update, Delete) que conta com a implementação do Web Service RESTful.
 
-Nesse sentido, o Web Service disponibiliza os recursos de inserir, remover e editar clientes, além de listar clientes ou apresentá-los por código.
-
 
 ## Quais são as funcionalidades? 
+
+O Web Service disponibiliza os recursos de inserir, remover e editar clientes, além de listar clientes ou apresentá-los por código.
 
 É possível acessar a lista de clientes em http://localhost:8080/sistemaEmpresa/pessoal/cliente
 
