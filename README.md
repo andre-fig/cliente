@@ -1,5 +1,6 @@
-SQL responsável por criar a estrutura do banco:
+# SQL responsável por criar a estrutura do banco:
 
+```
 CREATE TABLE cliente( 
 	codigo VARCHAR(50) NOT NULL, 
 	nome VARCHAR(100) NOT NULL, 
@@ -10,6 +11,7 @@ CREATE TABLE cliente(
 	PRIMARY KEY (codigo),
 	UNIQUE (cnpj)
 );
+```
 
 
 
@@ -28,6 +30,7 @@ Além disso, as operações implementadas no Web Service atendem seguintes scrip
 
 Método @GET: recupera os dados de um determinado cliente a partir de seu código (codigo): 
 
+```
 fetch('/sistemaEmpresa/pessoal/cliente/{CODIGO}'). 
 then(resposta => { 
    if (!resposta.ok){ 
@@ -37,11 +40,12 @@ then(resposta => {
  }). 
 then(jsonReposta => console.log(jsonReposta)).  
 catch(erro => console.log("Erro! Código do cliente não encontrado."));
-
+```
 
 
 Método @DELETE: remove um determinado cliente a partir de seu código (codigo): 
 
+```
 fetch('/sistemaEmpresa/pessoal/cliente/{CODIGO}',{method: 'DELETE'}). 
 then(resposta => { 
    if (!resposta.ok){ 
@@ -51,11 +55,12 @@ then(resposta => {
  }). 
 then(jsonReposta => console.log("Cliente removido!")).  
 catch(erro => console.log("Erro! O código do cliente não foi encontrado.")); 
-
+```
 
 
 Método @POST: adiciona um novo cliente a partir de seu código (codigo):
 
+```
  fetch('/sistemaEmpresa/pessoal/cliente/',  
   {method: 'POST', 
     body: JSON.stringify({ 
@@ -78,11 +83,12 @@ then(resposta => {
  }). 
 then(jsonReposta => console.log("Cliente inserido!")).  
 catch(erro => console.log("Erro na inserção."));
-
+```
 
 
 Método @PUT: atualiza os dados de um determinado cliente a partir de seu código (codigo):
 
+```
 fetch('/sistemaEmpresa/pessoal/cliente/',  
   {method: 'PUT', 
     body: JSON.stringify({ 
@@ -105,3 +111,4 @@ then(resposta => {
  }). 
 then(jsonReposta => console.log("Cliente atualizado.")). 
 catch(erro => console.log("Erro na atualização do cliente."));  
+```
