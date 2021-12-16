@@ -1,4 +1,4 @@
-### SQL responsável por criar a estrutura do banco:
+## SQL responsável por criar a estrutura do banco:
 
 ```
 CREATE TABLE cliente( 
@@ -14,14 +14,14 @@ CREATE TABLE cliente(
 ```
 
 
-### O que é?
+## O que é?
 
 Trata-se de uma aplicação CRUD (Create, Read, Update, Delete) que conta com a implementação do Web Service RESTful.
 
 Nesse sentido, o Web Service disponibiliza os recursos de inserir, remover e editar clientes, além de listar clientes ou apresentá-los por código.
 
 
-### Quais são as funcionalidades? 
+## Quais são as funcionalidades? 
 
 É possível acessar a lista de clientes em http://localhost:8080/sistemaEmpresa/pessoal/cliente
 
