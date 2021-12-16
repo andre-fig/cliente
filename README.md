@@ -31,7 +31,8 @@ Os métodos que tratam as requisições devolvem as respostas no formato JSON.
 
 Além disso, as operações implementadas no Web Service atendem seguintes scripts implementados utilizando a API Fetch:
 
-Método @GET: recupera os dados de um determinado cliente a partir de seu código (codigo): 
+
+* Método @GET: recupera os dados de um determinado cliente a partir de seu código (codigo): 
 
 ```
 fetch('/sistemaEmpresa/pessoal/cliente/{CODIGO}'). 
@@ -46,7 +47,7 @@ catch(erro => console.log("Erro! Código do cliente não encontrado."));
 ```
 
 
-Método @DELETE: remove um determinado cliente a partir de seu código (codigo): 
+* Método @DELETE: remove um determinado cliente a partir de seu código (codigo): 
 
 ```
 fetch('/sistemaEmpresa/pessoal/cliente/{CODIGO}',{method: 'DELETE'}). 
@@ -61,7 +62,7 @@ catch(erro => console.log("Erro! O código do cliente não foi encontrado."));
 ```
 
 
-Método @POST: adiciona um novo cliente a partir de seu código (codigo):
+* Método @POST: adiciona um novo cliente a partir de seu código (codigo):
 
 ```
  fetch('/sistemaEmpresa/pessoal/cliente/',  
@@ -89,7 +90,7 @@ catch(erro => console.log("Erro na inserção."));
 ```
 
 
-Método @PUT: atualiza os dados de um determinado cliente a partir de seu código (codigo):
+* Método @PUT: atualiza os dados de um determinado cliente a partir de seu código (codigo):
 
 ```
 fetch('/sistemaEmpresa/pessoal/cliente/',  
