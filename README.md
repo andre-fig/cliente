@@ -16,7 +16,7 @@ CREATE TABLE cliente(
 
 ## O que é?
 
-Trata-se de uma aplicação CRUD (Create, Read, Update, Delete) que conta com a implementação do Web Service RESTful.
+Trata-se de uma aplicação CRUD (Create, Read, Update, Delete) desenvolvida em Java, que conta com a implementação do Web Service RESTful.
 
 
 ## Quais são as funcionalidades? 
